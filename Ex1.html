@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Exercise 1">
+        <p>Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không.</p> <br>
+        <input type="number" placeholder="Nhập a:" id="ex1.1stnumber">
+        <input type="number" placeholder="Nhập b:" id="ex1.2ndnumber">
+        <button onclick="CheckDivisible()">Check</button> <br>
+        <p id = "ex1.display"></p>
+    </div>
+    <div id="Exercise 2">
+        <p>Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.</p>
+        <input type="number" placeholder="Nhập tuổi:" id="ex2.age">
+        <button onclick="CheckAge()">Check</button> <br>
+        <p id="ex2.display"></p>
+    </div>
+    <div id="Exercise 3">
+        <p>Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0.</p>
+        <input type="number" placeholder="Nhập số nguyên: " id="ex3.number">
+        <button onclick="CheckNumber()">Check</button> <br>
+        <p id="ex3.display"></p>
+    </div>
+    <div id="Exercise 4">
+        <p>Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó.</p>
+        <input type="number" placeholder="Nhập số thứ nhất: " id="ex4.1stnumber">
+        <input type="number" placeholder="Nhập số thứ hai: " id="ex4.2ndnumber">
+        <input type="number" placeholder="Nhập số thứ ba: " id="ex4.3rdnumber">
+        <button onclick="GetMax()">Check</button>
+        <p id="ex4.display"></p>
+    </div>
+    <div id="Exercise 5">        
+        <p>Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ.</p>
+        <p>Nhập điểm: </p>
+        <input type="number" placeholder="Nhập điểm thường xuyên: " id="ex5.attendGrade" min="0" max="10">
+        <input type="number" placeholder="Nhập điểm giữa kì: " id="ex5.midGrade" min="0" max="10">
+        <input type="number" placeholder="Nhập điểm cuối kì: " id="ex5.finalGrade" min="0" max="10">
+        <button onclick="AbilityRanking()">Check</button>
+        <p id="ex5.display"></p>
+    </div>
+    <div id="Exercise 6">
+        <p>Bài 6: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác</p>
+        <input type="number" placeholder="Nhập cạnh thứ nhất: " id="ex6.1stEgde" >
+        <input type="number" placeholder="Nhập cạnh thứ hai: " id="ex6.2ndEgde" >
+        <input type="number" placeholder="Nhập cạnh thứ ba: " id="ex6.3rdEgde" >
+        <button onclick="CheckTriangle()">Check</button>
+        <p id="ex6.display"></p>
+    </div>
+    <div id="Exercise 7">
+        <p>Bài 7: Kiểm tra xem một số nhập vào có phải là tuổi của một người không.</p>
+        <input type="number" placeholder="Nhập tuổi:" id="ex7.age">
+        <button onclick="AvaiableAge()">Check</button> <br>
+        <p id="ex7.display"></p>
+    </div>
+    <div id="Exercise 8">
+        <p>Bài 8: Tính diện tích hình vuông khi biết cạnh a.</p>
+        <input type="number" placeholder="Nhập số đo cạnh" id="ex8.edge">
+        <button onclick ="SquareCal()">Calculate</button>
+        <p id="ex8.display"></p>
+    </div>
+    <div id="Exercise 9">
+        <p>Bài 9: Tính diện tích hình chữ nhật khi biết 02 cạnh a, b.</p>
+        <input type="number" placeholder="Nhập số đo chiều dài: " id="ex9.length">
+        <input type="number" placeholder="Nhập số đo chiều rộng: " id="ex9.width">
+        <button onclick ="RectangleCal()">Calculate</button>
+        <p id="ex9.display"></p>
+    </div>
+    <div id="Exercise 10">
+        <p>Bài 10: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.</p>
+        <input type="number" placeholder="Nhập số đo chiều dài: " id="ex10.edge1">
+        <input type="number" placeholder="Nhập số đo chiều dài: " id="ex10.edge2">
+        <button onclick="TriangleCal()">Calculate</button>
+        <p id="ex10.display"></p>
+    </div>
+    <div id="Exercise 11">
+        <p>Bài 11: Giải phương trình bậc 1.</p>
+        <input type="number" placeholder="Nhập a: " id="ex11.a">
+        <input type="number" placeholder="Nhập b: " id="ex11.b">
+        <button onclick="FirstDegreeEquation()">Calculate</button>
+        <p id="ex11.display"></p>
+    </div>
+    <div id="Exercise 12">
+        <p>Bài 12: Giải phương trình bậc 2.</p>
+        <input type="number" placeholder="Nhập a: " id="ex12.a">
+        <input type="number" placeholder="Nhập b: " id="ex12.b">
+        <input type="number" placeholder="Nhập c: " id="ex12.c">
+        <button onclick="SeconDegreeEquation()">Calculate</button>
+        <p id="ex12.display"></p>
+    </div>
+    <div id="Exercise 13">
+        <p>Bài 13: Chuyển từ độ C sang độ F.</p>
+        <input type="number" placeholder="Nhập nhiệt độ:" id="ex13.celcius">
+        <button onclick="CelciusConverter()">Convert</button> <br>
+        <p id="ex13.display"></p>
+    </div>
+    <div id="Exercise 14">
+        <p>Bài 14: Chuyển từ mét sang feet</p>
+        <input type="number" placeholder="Nhập độ dài:" id="ex14.length">
+        <button onclick="LengthConverter()">Convert</button> <br>
+        <p id="ex14.display"></p>
+    </div>
+    <div id="Exercise 15">
+        <p>Bài 15: Kiểu tra kiểu dữ lieu của 2 biến</p>
+        <p>data1 = ["Acer, Dell, Asus"]</p>
+        <p>var data2 = "Acer, Dell, Asus"</p>
+        <button onclick="TypeComparator()">CompareType</button> <br>
+        <p id="ex15.displayTypeData1"></p>
+        <p id="ex15.displayTypeData2"></p>
+        <p id="ex15.displayCompare"></p>
+    </div>
+</body>
+    <script src="./js/CheckDivisible.js"></script>
+    <script src="./js/CheckAge.js"></script>
+    <script src="./js/CheckNumber.js"></script>
+    <script src="./js/GetMax.js"></script>
+    <script src="./js/AbilityRanking.js"></script>
+    <script src="./js/CheckTriangle.js"></script>
+    <script src="./js/AvaiableAge.js"></script>
+    <script src="./js/SquareCal.js"></script>
+    <script src="./js/RectangleCal.js"></script>
+    <script src="./js/TriangleCal.js"></script>
+    <script src="./js/FirstDegreeEquation.js"></script>
+    <script src="./js/SecondDegreeEquation.js"></script>
+    <script src="./js/CelciusConverter.js"></script>
+    <script src="./js/LengthConverter.js"></script>
+    <script src="./js/TypeComparator.js"></script>
+</html>
