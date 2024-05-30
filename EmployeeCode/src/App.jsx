@@ -32,13 +32,24 @@ function App() {
 
   return (
     <>
+      <div className='form'>
+        <div>
+          <pre>
+          <label className='label' htmlFor="name">Enter Employee Code</label> <br></br>
+          <input type="text" id="name" name="name" onChange={onChangeHandler} value={inputValue} />
+          </pre>
+        </div>
+        <div>
+        <button className="confirm" type="submit" onClick={handleCode}>Submit</button>
+        </div>
+      </div>
+      <div>List Employee Code</div>
       <div>
-          <input type="text" name="name" onChange={onChangeHandler} value={inputValue} />
-          <button type="submit" onClick={handleCode}>Submit</button>
           {
             codes.map(item => <div key={item}>{item}</div>)
           }
       </div>
+      
     </>
   )
 }
