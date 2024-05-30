@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #40E0D0; /* Turquoise background */
+  background-color: #40E0D0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ input[type="text"] {
   border-radius: 5px;
 }
 button {
-  background-color: #FF6347; /* Contrasting color */
+  background-color: #1cca3f;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -39,27 +39,26 @@ button:hover {
   background-color: #E55342;
 }
 
-/* Style for List Employee Code */
 .list-employee-code {
-  background-color: #e6f7ff; /* Light blue background for the list */
-  border: 1px solid #91d5ff; /* Light blue border for the list */
-  border-radius: 4px; /* Rounded corners for the list */
-  padding: 10px; /* Padding inside the list */
-  margin: 10px 0; /* Margin around the list */
-  list-style-type: none; /* Remove default list markers */
+  background-color: #e6f7ff;
+  border: 1px solid #91d5ff;
+  border-radius: 4px; 
+  padding: 10px;
+  margin: 10px 0;
+  list-style-type: none;
 }
 
 .list-employee-code li {
-  padding: 5px 0; /* Padding for each list item */
-  border-bottom: 1px solid #91d5ff; /* Border between list items */
+  padding: 5px 0;
+  border-bottom: 1px solid #91d5ff;
 }
 
 .list-employee-code li:last-child {
-  border-bottom: none; /* Remove border for the last list item */
+  border-bottom: none; 
 }
 
 .list-employee-code li:hover {
-  background-color: #bae7ff; /* Change background on hover */
-  cursor: pointer; /* Change cursor to pointer on hover */
+  background-color: #bae7ff;
+  cursor: pointer; 
 }
 
