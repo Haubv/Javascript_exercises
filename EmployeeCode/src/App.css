@@ -1,42 +1,65 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #40E0D0; /* Turquoise background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.input-group {
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 2.5px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+button {
+  background-color: #FF6347; /* Contrasting color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  background-color: #E55342;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Style for List Employee Code */
+.list-employee-code {
+  background-color: #e6f7ff; /* Light blue background for the list */
+  border: 1px solid #91d5ff; /* Light blue border for the list */
+  border-radius: 4px; /* Rounded corners for the list */
+  padding: 10px; /* Padding inside the list */
+  margin: 10px 0; /* Margin around the list */
+  list-style-type: none; /* Remove default list markers */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-employee-code li {
+  padding: 5px 0; /* Padding for each list item */
+  border-bottom: 1px solid #91d5ff; /* Border between list items */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.list-employee-code li:last-child {
+  border-bottom: none; /* Remove border for the last list item */
 }
 
-.card {
-  padding: 2em;
+.list-employee-code li:hover {
+  background-color: #bae7ff; /* Change background on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.read-the-docs {
-  color: #888;
-}
