@@ -32,20 +32,20 @@ function App() {
 
   return (
     <>
-          <div className="container">
-            <div className="input-group">
-              <label htmlFor="employeeCode">Enter Employee Code</label>
-              <input type="text" id="employeeCode" value={inputValue} name="employeeCode" onChange={onChangeHandler}/>
-            </div>
-            <button type="submit" onClick={handleCode}>Submit</button>
-          </div>
-      <div className="list-employee-code">
-      <h3>List Employee Code</h3>
-          {
-            codes.map(item => <div key={item}>{item}</div>)
-          }
+      <div className="container">
+        <div className="input-group">
+          <label htmlFor="employeeCode">Enter Employee Code</label>
+          <input type="text" id="employeeCode" value={inputValue} name="employeeCode" onChange={onChangeHandler} />
+        </div>
+        <button type="submit" onClick={handleCode}>Submit</button>
       </div>
-      
+      <div className="list-employee-code">
+        <h3>List Employee Code</h3>
+        {
+          codes.map(item => <div key={item}>{item}</div>)
+        }
+      </div>
+
     </>
   )
 }
