@@ -52,24 +52,23 @@ function Form () {
     console.log(infos)
     return (
         <>
-                <div>
-                    <div htmlFor="code">Employee Code</div>
-                    <input type="text" name="code" value={inputCode} onChange={codeHandler}  />
-                </div>
-                <div>
-                    <div>Email</div>
-                    <input type="text" value={inputEmail} onChange={emailHandler} />
-                </div>
-                <div>
-                    <div>Password</div>
-                    <input type="text" value={inputPassword} onChange={passwordHandler} />
-                </div>
+                <div className="container">
+                    <div className="input-group">
+                            <label htmlFor="code">Employee Code</label>
+                            <input type="text" name="code" id="code" value={inputCode} onChange={codeHandler}  />
+                            <label htmlFor="email">Email</label>
+                            <input type="email" name="email" id="email" value={inputEmail} onChange={emailHandler} />
+                            <label htmlFor="password">Password</label>
+                            <input type="password" name="password" id="password" value={inputPassword} onChange={passwordHandler} />
+                    </div>
+
                 <div>
                     <button onClick={infoHandler}>Đăng ký</button>
                 </div>
-                <div>
+                </div>
+                <div className="list_of_information">
                 {infos.map((info) => (
-                    <div key={info.code}>
+                    <div key={info.id}>
                         <p>{info.code}</p>
                         <p>{info.email}</p>
                         <p>{info.password}</p>
