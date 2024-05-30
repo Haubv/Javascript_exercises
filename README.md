@@ -1,4 +1,4 @@
-Bài 1: 
+Bài 1: EmployeeCode
 Tạo ra một mảng bao gồm danh sách mã nhân viên( tối thiểu 10 mã)
 Tạo một form có một input để nhập dữ liệu và một nút submit để gửi giữ liệu
 Tạo state, binding dữ liệu trên ô input
@@ -7,7 +7,7 @@ Khi nhấn nút submit:
 -Nếu mã nhân viên đã tồn tại trong mảng thì hiển thị cảnh báo “Mã nhân viên đã tồn tại trong hệ thống”
 -Nếu mã nhân viên chưa tồn tại trong hệ thống thì hiển thị thông báo “Thêm mã nhân viên thành công”.
 
-Bài 2:
+Bài 2: ValidateForm
 ●	Tạo component tên là Form.jsx
 ●	Chuyển giao diện từ html sang JSX
 ●	Khởi tạo state, áp dụng kiến thức binding 2 chiều để lấy value từ các ô input
@@ -22,7 +22,7 @@ Bài 2:
 ●	Nếu tất các các dữ liệu nhập vào hợp lệ thì hiển thị “Đăng ký thành công”
 
  
-Bài 3: 
+Bài 3: RegisterForm
 ●	Tạo một form có một input để nhập dữ liệu và một nút submit để gửi giữ liệu 
 ●	Tạo state, binding dữ liệu trên ô input
 ●	Tạo ra một mảng trống để
